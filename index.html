@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Spotifree</title>
+        <link rel="shortcut icon" href="/img/fav.ico" />
+        <meta name="description" content="Spotifree is an OS X app that automatically mutes ads on Spotify.">
+        <meta name="viewport" content="width=960">
+        <link href="https://plus.google.com/115398848902535609851" rel="publisher" />
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+    <!-- NAVBAR ================================================== -->
+        <div class="navbar-wrapper">
+          <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+            <div class="container">
+                <div class="navbar navbar-inverse">
+                    <div class="navbar-inner">
+                        <div class="nav-collapse collapse">
+                            <ul class="nav">
+                                <li class="active"><a href="/">Home</a></li>
+                                <li><a href="/about.html">About</a></li>
+                                <li><a href="/contact.html">Contact</a></li>
+                                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/troubleshooting.html">Troubleshooting</a></li>
+                                        <li><a href="https://github.com/ArtemGordinsky/SpotiFree/issues?state=open">Known issues <div class="icon-external-link"></div></a></li>
+                                        <li><a href="mailto:artem@gordinskiy.com">Get support <div class="icon-envelope-alt"></div></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div><!-- /.navbar-inner -->
+                </div><!-- /.navbar -->
+            </div> <!-- /.container -->
+        </div><!-- /.navbar-wrapper -->
+
+        <!-- Carousel ================================================== -->
+        <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1 id='header'>Spotifree</h1>
+                            <p class="lead">Free OS X App For Muting Spotify Ads</p>
+                            <a class="button download" href="/files/Spotifree.dmg" download="Spotifree.dmg">
+                                Download Spotifree <div class="icon-cloud-download" style="padding: 6.45px 0 0 0;"></div>
+                            </a>
+                            <p class="buy-gift-card-text">Or <a href="http://www.maximuscards.com/?ref=8jxp3ev965" class="giftCardLink">buy a Spotify card</a>, and enjoy your music <span>like a boss</span>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.carousel -->
+        <div class="social">
+            <div class="container">
+                <ul class="social-buttons">
+                    <li>
+                        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=ArtemGordinsky&repo=SpotiFree&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+                    </li>
+                    <li class="follow-btn">
+                        <a href="https://twitter.com/Spotifreeapp" class="twitter-follow-button" data-show-count="false">Follow @Spotifreeapp</a>
+                    </li>
+                    <li class="tweet-btn">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://spotifree.gordinskiy.com" data-text="Free OS X App For Muting Spotify Ads." data-via="SpotifreeApp">Tweet</a>
+                    </li>
+                    <li class="gplus-btn">
+                        <g:plusone size="medium"></g:plusone>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+        <div class="container marketing">
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="span4">
+                    <div class="icon-group" style="font-size: 100pt; color: rgb(35, 35, 35);"></div>
+                    <h2>Used by thousands</h2>
+                    <p>Spotifree is being used by thousands of awesome Spotify listeners! According to downloads counter.</p>
+                </div><!-- /.span4 -->
+                <div class="span4">
+                    <div class="icon-volume-off" style="font-size: 100pt; color: rgb(35, 35, 35);"></div>
+                    <h2>Absolutely silent work</h2>
+                    <p>You will never notice how Spotifree works! Apart from an unusual silence every couple of songs or so :)</p>
+                </div><!-- /.span4 -->
+                    <div class="span4">
+                    <div class="icon-quote-right" style="font-size: 100pt; color: rgb(35, 35, 35);"></div>
+                    <h2>Mentioned on...</h2>
+                    <p>Spotifree was once mentioned on a Lifehacker <a href="http://lifehacker.com/5825728/how-to-mute-ads-on-spotify">article</a> about muting Spotify ads.</p>
+                </div><!-- /.span4 -->
+            </div><!-- /.row -->
+
+            <!-- FOOTER -->
+            <footer class="modal-footer">
+            Spotify is a registered trademark of Spotify Ltd. This website is in no way affiliated with spotify.com or Spotify Ltd.
+            </footer>
+
+        </div><!-- /.container -->
+        <!-- Your turn, JavaScript -->
+        <script defer src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script defer src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+        <script defer src="js/plugins.js"></script>
+        <script async>
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-37998463-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+        <script defer src="js/main.js"></script>
+        <script async>
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+        <script async>
+            !function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if(!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, "script", "twitter-wjs");
+        </script>
+    </body>
+</html>

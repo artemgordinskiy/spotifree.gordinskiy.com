@@ -1,0 +1,17 @@
+# Hiding all images
+User-agent: *
+Disallow: /*.png$
+Disallow: /*.jpeg$
+Disallow: /*.jpg$
+Disallow: /*.gif$
+Disallow: /*.php$
+Disallow: /*.css$
+Disallow: /*.js$
+
+# Google Image
+User-agent: Googlebot-Image
+Disallow: /
+
+# Hide from Archive.org
+User-agent: ia_archiver-web.archive.org
+Disallow: /
