@@ -609,6 +609,18 @@ p {
   line-height: 30px;
 }
 
+.lead.news {
+    font-size: 20px;
+    margin-top: 5px;
+    border-bottom: 1px solid #FFFFFF;
+    display: inline-block;
+}
+
+.lead.news a {
+    text-decoration: none;
+    color: inherit;
+}
+
 small {
   font-size: 85%;
 }
