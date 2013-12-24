@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Spotifree Changelog</title>
+        <link>http://spotifree.gordinskiy.com/appcast.xml</link>
+        <description>Most recent changes with links to updates.</description>
+        <language>en</language>
+
+        <item>
+            <title>Version 1.0</title>
+            <description>The initial release of the rewritten app</description>
+            <pubDate>Sun, Dec 22 2013 4:44:44 +0200</pubDate>
+            <enclosure
+                url="http://spotifree.gordinskiy.com/files/Spotifree-1.0.zip"
+                sparkle:shortVersionString="1.0"
+                sparkle:version=""
+                length="818602"
+                type="application/zip"
+                sparkle:dsaSignature="MC0CFQCQdZefqHEaVNJLcgw3rrr7bWQVwwIUEeJkXIBzmSBqKTnirsk8G6i01RY="
+            />
+        </item>
+
+        <item>
+            <title>Version 1.1</title>
+            <description><![CDATA[
+				<h3>Second release, with bugfixes, one new feature and increased awesomeness!</h3>
+				<h4>Features</h4>
+					<ul>
+						<li>Even more efficient! Spotifree is now detecting whether Spotify is running, and when it's not – becomes "idle", consuming 0 energy.</li>
+					</ul>
+				<h4>Fixes</h4>
+					<ul>
+						<li>The "about" window was being opened behind the active window</li>
+						<li>"Download Updates Automatically" checkbox wasn't disabled when "Check For Updates Automatically" is not checked.</li>
+						<li>Stability improvements</li>
+					</ul>
+				<h4>Other changes</h4>
+					<ul>
+						<li>New, monochrome statusbar icon (still ugly, but not sticking out as much)</li>
+						<li>Updated the "About" window</li>
+					</ul>]]></description>
+            <pubDate>Sun, Dec 24 2013 21:39:59 +0200</pubDate>
+            <enclosure
+            url="http://spotifree.gordinskiy.com/files/Spotifree-1.1.zip"
+            sparkle:shortVersionString="1.1"
+            sparkle:version="1"
+            length="825211"
+            type="application/zip"
+            sparkle:dsaSignature="MC0CFQCUJP7gHl6Cbtx+UjV4HQ0rTbUzbQIUIcBA3rN3Nid3dwC+P1/qas9h0xE="
+            />
+        </item>
+    </channel>
+</rss>
