@@ -1,0 +1,21 @@
+{
+  "name": "spotifree.gordinskiy.com",
+  "version": "1.4.0",
+  "description": "The website of Spotifree — the Free OS X App For Muting Spotify Ads",
+  "main": "index.html",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArtemGordinsky/spotifree.gordinskiy.com.git"
+  },
+  "keywords": [
+    "spotify",
+    "ads"
+  ],
+  "author": "Artem Gordinsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtemGordinsky/spotifree.gordinskiy.com/issues"
+  },
+  "homepage": "http://spotifree.gordinskiy.com"
+}
