@@ -5683,3 +5683,38 @@ a.badge:hover {
 .paypal-donate {
     margin-top: 15px;
 }
+
+.donate-button {
+	display: inline-block;
+
+	margin: 5px;
+	padding: 5px 10px;
+	background-color: #E08B1B;
+
+	background-image: -webkit-linear-gradient(#FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+	background-image: -moz-linear-gradient(#FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+	background-image: -o-linear-gradient(#FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+	background-image: -ms-linear-gradient(#FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+	background-image: linear-gradient(#FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	border: 1px solid #F8B500;
+	border-radius: 15px;
+
+	color: #0A3C6D;
+	line-height: 15px;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+	vertical-align: middle;
+	outline: none;
+}
+
+.donate-button:hover {
+	background-image: -webkit-linear-gradient(#FCE96B 0%, #FCCD4D 50%, #F8B500 51%, #E7BD40 100%);
+	background-image: -moz-linear-gradient(#FCE96B 0%, #FCCD4D 50%, #F8B500 51%, #E7BD40 100%);
+	background-image: -o-linear-gradient(#FCE96B 0%, #FCCD4D 50%, #F8B500 51%, #E7BD40 100%);
+	background-image: -ms-linear-gradient(#FCE96B 0%, #FCCD4D 50%, #F8B500 51%, #E7BD40 100%);
+	background-image: linear-gradient(#FCE96B 0%, #FCCD4D 50%, #F8B500 51%, #E7BD40 100%);
+}
