@@ -776,6 +776,10 @@ ol.inline > li {
     padding-left: 5px;
 }
 
+ol.latin-letters {
+    list-style-type: upper-latin;
+}
+
 dl {
     margin-bottom: 20px;
 }
