@@ -6,10 +6,10 @@
         <title>Troubleshooting | Spotifree</title>
         <link rel="shortcut icon" href="/img/fav.ico" />
         <meta name="description" content="">
-        <meta name="viewport" content="width=960">
+        <meta name="viewport" content="width=device-width">
         <link href="https://plus.google.com/115398848902535609851" rel="publisher" />
-        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-        <link rel="stylesheet" href="css/secondary-pages.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css">
+        <link rel="stylesheet" href="dist/styles.css">
     </head>
     <body>
     <!-- NAVBAR
@@ -46,7 +46,7 @@
         </div><!-- /.navbar-wrapper -->
 
         <!-- Carousel ================================================== -->
-        <div id="myCarousel" class="carousel slide">
+        <div id="myCarousel" class="carousel slide secondary-page">
             <div class="carousel-inner">
                 <div class="item active">
                     <div class="container">
@@ -89,9 +89,15 @@
                             <li>Go to <a href="http://spotify.en.uptodown.com/mac/old">this website</a>;</li>
                             <li>Download version <strong>0.9.15.17</strong>;</li>
                             <li>Replace your <strong>Spotify</strong> app with the downloaded one;</li>
+                            <li>Press <strong>⇧ + ⌘ + G</strong> in Finder, paste in <strong>~/Library/Application Support/Spotify</strong>;</li>
+                            <li>If present, delete <strong>Spotify_new.archive</strong> and <strong>Spotify_new.archive.sig</strong>;</li>
+                            <li>Open a text editor;</li>
+                            <li>Create two blank documents named <strong>Spotify_new.archive</strong> and <strong>Spotify_new.archive.sig</strong> (be sure that extension is not hidden);</li>
+                            <li>Save both to the previously opened folder;</li>
+                            <li>Right click each file and go to <strong>Get Info</strong></li>
+                            <li>Check the <strong>Locked</strong> checkbox on each and close the windows;</li>
                             <li>Quit and open <strong>Spotifree</strong> again;</li>
                             <li>Open <strong>Spotify</strong> app.</li>
-                            <li>Ignore all of the prompts to install newer versions of Spotify.</li>
                         </ol>
                     </li>
                 </ol>
@@ -108,8 +114,7 @@
         <!-- Your turn, JavaScript -->
         <script defer src="//code.jquery.com/jquery-1.9.1.min.js"></script>
         <script defer src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
-        <script defer src="js/plugins.js"></script>
-        <script defer src="js/main.js"></script>
+        <script defer src="dist/scripts.js"></script>
         <script defer type="text/javascript">
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-37998463-1']);

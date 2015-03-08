@@ -1,53 +1,35 @@
 {
-    "name": "spotifree.gordinskiy.com",
-    "version": "1.5.0",
-    "description": "The website of Spotifree — the Free OS X App For Muting Spotify Ads",
-    "main": "index.html",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ArtemGordinsky/spotifree.gordinskiy.com.git"
-    },
-
-    "keywords": [
-        "spotify", "ads"
-    ],
-
-    "author": "Artem Gordinsky",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/ArtemGordinsky/spotifree.gordinskiy.com/issues"
-    },
-
-    "jshint": {
-        "options": {
-            "jshintrc": ".jshintrc"
-        },
-        "all": [
-            "Gruntfile.js", "js/*.js", "!js/scripts.js"
-        ]
-    },
-
-    "uglify": {
-        "dist": {
-            "files": {
-                "js/scripts.js": [
-                    "js/main.js", "js/plugins.js"
-                ]
-            }
-        }
-    },
-
-    "homepage": "http://spotifree.gordinskiy.com",
-    "engines": {
-        "node": ">= 0.10.0"
-    },
-
-    "devDependencies": {
-        "grunt": "^0.4.5",
-        "grunt-contrib-jshint": "~0.7.2",
-        "grunt-contrib-watch": "~0.5.3",
-        "grunt-contrib-concat": "~0.3.0",
-        "grunt-contrib-uglify": "~0.2.7",
-        "grunt-uncss": "^0.3.4"
-    }
+  "name": "spotifree.gordinskiy.com",
+  "version": "1.5.0",
+  "description": "The website of Spotifree — the Free OS X App For Muting Spotify Ads",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArtemGordinsky/spotifree.gordinskiy.com.git"
+  },
+  "keywords": [
+    "spotify",
+    "ads"
+  ],
+  "author": "Artem Gordinsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtemGordinsky/spotifree.gordinskiy.com/issues"
+  },
+  "homepage": "http://spotifree.gordinskiy.com",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-uncss": "^0.4.1",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-htmlmin": "^0.4.0",
+    "grunt-string-replace": "^1.0.0",
+    "grunt-contrib-compress": "^0.13.0",
+    "grunt-csscss": "^0.6.2"
+  }
 }

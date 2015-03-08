@@ -6,10 +6,10 @@
         <title>Spotifree</title>
         <link rel="shortcut icon" href="/img/fav.ico" />
         <meta name="description" content="Spotifree is an OS X app that automatically mutes ads on Spotify.">
-        <meta name="viewport" content="width=960">
+        <meta name="viewport" content="width=device-width">
         <link href="https://plus.google.com/115398848902535609851" rel="publisher" />
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="dist/styles.css">
     </head>
     <body>
     <!-- NAVBAR ================================================== -->
@@ -48,7 +48,7 @@
                             <h1 id='header'>Spotifree</h1>
                             <p class="lead">Free OS X App For Muting Spotify Ads</p>
                             <a class="button download" href="/files/Spotifree.dmg" download="Spotifree.dmg">
-                                Download Spotifree <div class="icon-cloud-download" style="padding: 6px 0 0 0;"></div>
+                                Download Spotifree<div class="icon-cloud-download" style="padding: 6px 0 0 0; margin-left: 5px;"></div>
                             </a>
                             <div class="paypal-donate">
                                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -117,7 +117,6 @@
         </div><!-- /.container -->
         <script defer src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
         <script defer src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
-        <script defer src="js/plugins.js"></script>
         <script async>
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-37998463-1']);
@@ -129,7 +128,7 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
         </script>
-        <script defer src="js/main.js"></script>
+        <script defer src="dist/scripts.js"></script>
         <script async>
           (function() {
             var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
