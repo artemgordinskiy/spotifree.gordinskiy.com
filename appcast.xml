@@ -49,45 +49,5 @@
                     sparkle:dsaSignature="MC0CFQCN2lCmwPIynAzfKxBLJ9ur48RklwIUWSkH5+yc17TmXyZYtJiB7AA8jzM="
                     />
         </item>
-
-        <item>
-            <title>Version 1.4.0</title>
-            <description><![CDATA[
-                <ul style="font-size: 14px; font-family: Helvetica, Arial, sans-serif;">
-                    <li>New method of ad detection;</li>
-                    <li>Opt-in notifications about muted advertisements;</li>
-                    <li>Fixed a bug causing local tracks to be muted;</li>
-                    <li>Squashed another bug, responsible for not unmuting the sound when blocking an ad after the end of a playlist;</li>
-                </ul>
-
-                <p style="font-size: 14px; font-family: Helvetica, Arial, sans-serif;">PS: If you know your way around Illustrator and dislike our menubar icons as much as I do, feel free to try and make something more decent. The source file is <a href="http://cl.ly/3s0B2v2Q0k2g">here</a>.</p>]]></description>
-            <pubDate>Sun, Jun 15 2014 17:58:00 +0200</pubDate>
-            <enclosure
-                    url="http://spotifree.gordinskiy.com/files/Spotifree-1.4.0.zip"
-                    sparkle:shortVersionString="1.4.0"
-                    sparkle:version="1.4.0"
-                    length="756362"
-                    type="application/zip"
-                    sparkle:dsaSignature="MC0CFFMjR0F/V71EiiDAfSBhxcgHGAnsAhUAivfjUvzcK1gg/r/aph3MiUryWhE="
-                    />
-        </item>
-
-        <item>
-            <title>Version 1.3.0</title>
-            <description><![CDATA[
-                <ul style="font-size: 14px; font-family: Helvetica, Arial, sans-serif;">
-                    <li>An option to hide the menubar icon</li>
-                    <li>Now using the last opened Spotifree as login item</li>
-                </ul>]]></description>
-            <pubDate>Mon, Jan 20 2014 23:15:00 +0200</pubDate>
-            <enclosure
-                    url="http://spotifree.gordinskiy.com/files/Spotifree-1.3.0.zip"
-                    sparkle:shortVersionString="1.3.0"
-                    sparkle:version="1.3.0"
-                    length="830792"
-                    type="application/zip"
-                    sparkle:dsaSignature="MC4CFQCc2TOwhOLSDbGskSOc7W+3LPm4GAIVAI4KoUY/BY9F88BWO0TcuNniAw7X"
-                    />
-        </item>
     </channel>
 </rss>
