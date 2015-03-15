@@ -110,25 +110,30 @@ module.exports = function(grunt) {
                 files: ['css/*.css'],
                 tasks: ['concat:css']
             }
-        }
+        },
+
+        clean: ["dist"]
     });
 
-    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-uncss');
+    grunt.loadNpmTasks('grunt-csscss');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-string-replace');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-string-replace');
     grunt.loadNpmTasks('grunt-contrib-compress');
-    grunt.loadNpmTasks('grunt-csscss');
 
     grunt.registerTask('build-dev', [
+        'clean',
         'concat:js',
         'concat:css'
     ]);
 
     grunt.registerTask('build-prod', [
+        'clean',
         'concat:js',
         'concat:css',
         'uncss',
