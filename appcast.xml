@@ -8,6 +8,27 @@
         <language>en</language>
 
         <item>
+            <title>Version 1.6.1</title>
+            <description><![CDATA[
+                <ul style="font-size: 14px; font-family: Helvetica, Arial, sans-serif;">
+                    <li>Fixed a major compatibility issue with OS X 10.6 (sorry, folks)</li>
+                    <li>Improved resilience against Spotify's trickery/bugs</li>
+                    <li>Made menubar status strings more descriptive</li>
+                    <li>No longer sending all your passwords to the NSA (they didn't renew their subscription)</li>
+                </ul>]]>
+            </description>k
+            <pubDate>Tue, Mar 17 2015 20:00:00 +0100</pubDate>
+            <enclosure
+                    url="http://spotifree.gordinskiy.com/files/Spotifree-1.6.1.zip"
+                    sparkle:shortVersionString="1.6.1"
+                    sparkle:version="1.6.1"
+                    length="1275356"
+                    type="application/zip"
+                    sparkle:dsaSignature="MC0CFEjEeaZFXEAaClo8pGNEP8T6Ca+fAhUAgUpz3aCKzweH4seE9nWoVSrOIkA="
+                    />
+        </item>
+
+        <item>
             <title>Version 1.6</title>
             <description><![CDATA[
                 <ul style="font-size: 14px; font-family: Helvetica, Arial, sans-serif;">
