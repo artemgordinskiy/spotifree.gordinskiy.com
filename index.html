@@ -51,19 +51,22 @@
                                 <span class="content-initial">Preparing the link...</span>
                                 <span class="content-final">Download Spotifree<span class="icon-cloud-download"></span></span>
                             </a>
-                            <div class="paypal-donate">
-                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                    <input type="hidden" name="amount" value="5">
-                                    <input type="hidden" name="cmd" value="_donations">
-                                    <input type="hidden" name="business" value="a.rtemjo@gmail.com">
-                                    <input type="hidden" name="lc" value="US">
-                                    <input type="hidden" name="item_name" value="Donation for the development of Spotifree app">
-                                    <input type="hidden" name="no_note" value="0">
-                                    <input type="hidden" name="currency_code" value="USD">
-                                    <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
-                                    <button type="submit" class="donate-button" title="Donate to support the development of Spotifree">Donate $5</button>
-                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                                </form>
+                            <div class="donate">
+                                <div class="donate-option">
+                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                        <input type="hidden" name="amount" value="5">
+                                        <input type="hidden" name="cmd" value="_donations">
+                                        <input type="hidden" name="business" value="a.rtemjo@gmail.com">
+                                        <input type="hidden" name="lc" value="US">
+                                        <input type="hidden" name="item_name" value="Donation for the development of Spotifree app">
+                                        <input type="hidden" name="no_note" value="0">
+                                        <input type="hidden" name="currency_code" value="USD">
+                                        <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
+                                        <button type="submit" class="donate-option-paypal-button" title="Make a donation to express your gratitude and support further development of Spotifree">PayPal Donate</button>
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                    </form>
+                                </div>
+                                <svg class="donate-option donate-option-bitcoin-button" xmlns="http://www.w3.org/2000/svg" id="bitcoin-donate" width="25" height="25" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid"><defs><linearGradient id="a" x1="0%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#f9aa4b"/><stop offset="100%" stop-color="#f7931a"/></linearGradient></defs><path fill="url(#a)" d="M63.0359 39.741c-4.274 17.143-21.637 27.576-38.782 23.301-17.138-4.274-27.571-21.638-23.295-38.78C5.2309 7.117 22.5939-3.317 39.7339.957c17.144 4.274 27.576 21.64 23.302 38.784z" transform="scale(0.015625)"/><path fill="#fff" d="M.72032656.42876562C.7302797.36223437.67962344.32646875.6103578.30260937l.02246876-.090125L.5779672.1988125l-.021875.08775C.5416703.28296875.5268578.27957812.51213905.27621875L.5341703.18789062.4793422.17421875.4568578.2643125C.4449203.26159375.43320157.25890625.42182657.25607812l.0000625-.00028125L.3462328.23690625.33163907.2955S.3723422.30482812.3714828.30540625c.02221876.00554687.0262344.02025.0255625.03190625L.37145157.43998437C.3729828.440375.3749672.4409375.3771547.4418125.37532655.44135937.37337343.44085937.3713578.440375l-.035875.14382812c-.00271874.00675-.00960936.016875-.0251406.01303125C.31088905.59803125.2704672.58728125.2704672.58728125L.2432328.65007813.31462345.667875C.3279047.67120312.3409203.6746875.3537328.67796875L.3310297.769125l.05479686.01367188.02248438-.0901875c.01496875.0040625.0295.0078125.04371875.01134375L.42962342.79371875.4844828.80739063.50718595.71640625c.09354687.01770313.16389062.0105625.1935-.07404687C.7245453.57423438.69949845.5349375.6502797.5093125.68612343.50104688.71312343.47746875.72032655.42876563zM.5949828.60453125c-.0169531.068125-.13165624.03129688-.16884374.0220625l.030125-.12076563c.0371875.00928125.1564375.02765625.13871875.09870313zm.01696876-.17675C.5964828.48975.50101406.45826563.4700453.45054688L.4973578.34101563c.03096876.00771875.13070314.022125.11459376.08676562z"/></svg>
                             </div>
                         </div>
                     </div>
@@ -84,6 +87,7 @@
                         <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://spotifree.gordinskiy.com" data-text="Free OS X App For Muting Spotify Ads." data-via="SpotifreeApp">Tweet</a>
                     </li>
                     <li class="gplus-btn">
+                        <!--suppress HtmlUnknownTag, XmlUnboundNsPrefix, CheckTagEmptyBody -->
                         <g:plusone size="medium"></g:plusone>
                     </li>
                 </ul>
@@ -154,8 +158,17 @@
                         alert('Sorry, could not retrieve the download link. Reload the page to try again.');
                     });
             })();
+
+            $(document).ready(function() {
+                $('#bitcoin-donate').popover({
+                    placement: 'top',
+                    title: 'Donate to my Bitcoin wallet',
+                    content: '<strong>1KHtBjNDas38EGJX1StXaGPC3JuKT4AdA2</strong>',
+                    html: true
+                });
+            });
         </script>
-        <script defer src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
         <script>
            var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-37998463-1']);

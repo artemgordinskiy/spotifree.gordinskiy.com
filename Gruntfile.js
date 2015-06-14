@@ -55,7 +55,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     ignoreSheets: [/cdnjs\.cloudflare\.com/],
-                    ignore: [/\.active/, /\.open/, /\.disabled/]
+                    ignore: [/active/, /open/, /disabled/, /popover/, /\.fade\b/, /\.in\b/, /\.top\b/]
                 },
                 files: {
                     'dist/styles.css': ['index.html', 'about.html', 'contact.html', 'troubleshooting.html']
