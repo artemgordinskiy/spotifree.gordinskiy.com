@@ -4525,13 +4525,6 @@ div.social {
     padding-left: 0;
     list-style: none;
 }
-.social-buttons li {
-    display: inline-block;
-    padding: 5px 8px;
-    line-height: 1;
-    *display: inline;
-    *zoom: 1;
-}
 
 .modal.fade.in {
     top: 10%;
@@ -5814,7 +5807,11 @@ hr.soften {
     *zoom: 1;
 }
 
-
+/* Looks better when Twitter scripts have failed to load for whatever reason */
+.twitter-follow-button,
+.twitter-share-button {
+    color: transparent;
+}
 
 /* Marketing section of Overview
 -------------------------------------------------- */
