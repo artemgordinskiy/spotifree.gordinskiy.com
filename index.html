@@ -126,7 +126,7 @@
                     var $button = $('.js-download-button');
 
                     // in case the function is called before the document is ready, repeat the call again in a few milliseconds
-                    if (document.readyState !== 'interactive') {
+                    if (document.readyState !== 'interactive' && document.readyState !== 'complete') {
                         return window.setTimeout(function() {
                             activateTheDownloadButton(downloadUrl);
                         }, 100);
@@ -159,7 +159,7 @@
             })();
         </script>
         <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
-        <script>
+        <script async>
            var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-37998463-1']);
           _gaq.push(['_trackPageview']);
@@ -170,14 +170,14 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
         </script>
-        <script>
+        <script async>
           (function() {
             var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
             po.src = 'https://apis.google.com/js/plusone.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
           })();
         </script>
-        <script>
+        <script async>
             !function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if(!d.getElementById(id)) {
