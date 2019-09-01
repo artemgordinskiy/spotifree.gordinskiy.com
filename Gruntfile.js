@@ -43,7 +43,6 @@ module.exports = function(grunt) {
                     collapseWhitespace: true
                 }, files: {
                     'dist/index.html': 'index.html',
-                    'dist/contact.html': 'contact.html',
                     'dist/about.html': 'about.html',
                     'dist/troubleshooting.html': 'troubleshooting.html',
                     'dist/404.html': '404.html'
@@ -58,7 +57,7 @@ module.exports = function(grunt) {
                     ignore: [/active/, /open/, /disabled/, /popover/, /\.fade\b/, /\.in\b/, /\.top\b/]
                 },
                 files: {
-                    'dist/styles.css': ['index.html', 'about.html', 'contact.html', 'troubleshooting.html']
+                    'dist/styles.css': ['index.html', 'about.html', 'troubleshooting.html']
                 }
             }
         },
